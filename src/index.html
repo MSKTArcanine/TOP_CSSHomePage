@@ -1,8 +1,21 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(max-width: 600px)" srcset="./img/" sizes="90vw">
+      <source media="(max-width: 1000px)" srcset="./img/" sizes="40vw">
+      <img src="<%=require('./img/img-1000w.webp')%>" alt="placeholder"/>
+    </picture>
+    <article>
+      <h1>Blabla</h1>
+    </article>
+  </header>
+  <main></main>
+  <footer></footer>
+</body>
 </html>

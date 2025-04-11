@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "TEMPLATE",
+      title: "HomePage",
       template: "./src/index.html",
       inject: "head",
       scriptLoading: "defer",
@@ -26,6 +26,10 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|webp)$/i,
+        type: "asset/resource",
+      }
     ],
   },
 };

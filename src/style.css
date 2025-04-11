@@ -1,0 +1,17 @@
+/* header > * {
+    border: 1px solid black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header picture {
+}
+header article {
+    max-width: 100%;
+}
+header picture img {
+    object-fit: cover;
+} */
